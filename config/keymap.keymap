@@ -1,4 +1,5 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -97,11 +98,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans    &trans          &trans     &trans                        &trans         &trans     &trans     &trans         &trans  &trans
-&trans  &kp PG_DN  &trans    &kp UP_ARROW    &trans     &kp PG_UP                     &kp LS(LG(S))  &kp LG(E)  &kp LC(S)  &kp RS(RCTRL)  &trans  &trans
-&trans  &kp HOME   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END    &trans  &trans     &kp LC(A)      &kp LC(Z)  &kp LC(Y)  &kp RSHIFT     &trans  &trans
-&trans  &trans     &trans    &trans          &trans     &trans     &trans  &kp LG(V)  &kp LC(X)      &kp LC(F)  &kp LC(H)  &kp RCTRL      &trans  &trans
-&trans  &trans     &trans    &trans          &trans     &trans     &trans  &kp LC(C)  &kp LC(V)      &trans     &trans     &trans         &trans  &trans
+&trans           &trans     &trans    &trans          &trans     &trans                        &trans         &trans     &trans     &trans         &trans  &trans
+&kp LA(LC(END))  &kp PG_DN  &trans    &kp UP_ARROW    &trans     &kp PG_UP                     &kp LS(LG(S))  &kp LG(E)  &kp LC(S)  &kp RS(RCTRL)  &trans  &trans
+&trans           &kp HOME   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END    &trans  &trans     &kp LC(A)      &kp LC(Z)  &kp LC(Y)  &kp RSHIFT     &trans  &trans
+&trans           &trans     &trans    &trans          &trans     &trans     &trans  &kp LG(V)  &kp LC(X)      &kp LC(F)  &kp LC(H)  &kp RCTRL      &trans  &trans
+&trans           &trans     &trans    &trans          &trans     &trans     &trans  &kp LC(C)  &kp LC(V)      &trans     &trans     &trans         &trans  &trans
             >;
         };
 
@@ -117,11 +118,11 @@
 
         layer_4 {
             bindings = <
-&trans           &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(LC(END))  &trans  &trans  &trans  &trans  &Macro02                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &Macro03  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &trans  &trans  &trans  &trans  &Macro02                  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 1  &trans  &trans  &trans  &trans  &Macro03  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
