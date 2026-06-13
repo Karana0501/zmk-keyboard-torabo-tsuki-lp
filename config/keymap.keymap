@@ -76,7 +76,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        main {
             bindings = <
 &kp ESC    &kp N1    &kp N2        &kp N3         &kp N4       &kp N5                                     &kp N6           &kp N7    &kp N8     &kp N9    &kp N0         &kp BSPC
 &kp ESC    &kp Q     &kp W         &kp E          &kp R        &kp T                                      &kp Y            &kp U     &kp I      &kp O     &kp BACKSPACE  &kp DEL
@@ -86,7 +86,7 @@
             >;
         };
 
-        layer_1 {
+        number {
             bindings = <
 &trans  &trans   &trans  &trans  &trans  &trans                     &trans          &trans        &trans        &trans        &trans  &trans
 &trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans                     &kp SLASH       &kp NUMBER_7  &kp NUMBER_8  &kp N9        &trans  &trans
@@ -96,7 +96,7 @@
             >;
         };
 
-        layer_2 {
+        shortcut {
             bindings = <
 &trans           &trans     &trans    &trans          &trans     &trans                        &trans         &trans     &trans     &trans         &trans  &trans
 &kp LA(LC(END))  &kp PG_DN  &trans    &kp UP_ARROW    &trans     &kp PG_UP                     &kp LS(LG(S))  &kp LG(E)  &kp LC(S)  &kp RS(RCTRL)  &trans  &trans
@@ -106,7 +106,7 @@
             >;
         };
 
-        layer_3 {
+        kigou {
             bindings = <
 &trans  &trans  &trans           &trans                &trans                 &trans                  &trans  &trans                &trans                 &trans    &trans  &trans
 &trans  &trans  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &Macro00  &trans  &trans
@@ -116,13 +116,23 @@
             >;
         };
 
-        layer_4 {
+        Bluetooth {
             bindings = <
 &trans        &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 0  &trans  &trans  &trans  &trans  &Macro02                  &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 1  &trans  &trans  &trans  &trans  &Macro03  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
