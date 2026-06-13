@@ -56,6 +56,20 @@
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
             label = "KAGIKAKKO";
         };
+
+        Macro02: Macro02 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp U &kp Z &kp U &kp R &kp A &kp N &kp AT &kp LS(K) &kp A &kp Z &kp U &kp M &kp A &kp N1 &kp N2 &kp N5 &kp N1>;
+            label = "MACRO02";
+        };
+
+        Macro03: Macro03 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp O &kp B &kp E &kp L &kp C &kp O &kp DOT &kp C &kp O &kp M>;
+            label = "MACRO03";
+        };
     };
 
     keymap {
@@ -66,7 +80,7 @@
 &kp ESC    &kp N1    &kp N2        &kp N3         &kp N4       &kp N5                                     &kp N6           &kp N7    &kp N8     &kp N9    &kp N0         &kp BSPC
 &kp ESC    &kp Q     &kp W         &kp E          &kp R        &kp T                                      &kp Y            &kp U     &kp I      &kp O     &kp BACKSPACE  &kp DEL
 &kp TAB    &kp A     &kp S         &kp D          &kp F        &kp G        &mkp LCLK        &mkp RCLK    &kp H            &kp J     &kp K      &kp L     &kp P          &kp MINUS
-&kp LSHFT  &kp Z     &kp X         &kp C          &kp V        &kp B        &kp ASTERISK     &kp AT_SIGN  &kp N            &kp M     &kp COMMA  &kp DOT   &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z     &kp X         &kp C          &kp V        &kp B        &lt 4 ASTERISK   &kp AT_SIGN  &kp N            &kp M     &kp COMMA  &kp DOT   &kp SEMICOLON  &kp SQT
 &kp LCTRL  &kp LGUI  &kp LEFT_ALT  &kp LS(LG(S))  &lt 1 LANG2  &lt 2 LANG1  &mt LSHFT SPACE  &kp ENTER    &lt 3 BACKSPACE  &kp BSPC  &kp RALT   &kp RGUI  &kp SLASH      &kp EQUAL
             >;
         };
@@ -103,11 +117,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(LC(END))  &trans  &trans  &trans  &trans  &Macro02                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &Macro03  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
