@@ -40,6 +40,11 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <47 48>;
         };
+
+        test {
+            bindings = <&kp A>;
+            key-positions = <19 20 21 33 34>;
+        };
     };
 
     macros {
