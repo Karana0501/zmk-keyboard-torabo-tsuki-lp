@@ -3,18 +3,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-/ {
-    input_processors {
-        zip_scroll_x_scaler: zip_scroll_x_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-    };
-};
-
 &zip_temp_layer {
     //キー入力から200ms間はAMLを発動しない。
     require-prior-idle-ms = <200>;
@@ -28,7 +16,6 @@
         48 // <
     >;
 };
-
 
 &pointing_listener {
     compatible = "zmk,input-listener";
