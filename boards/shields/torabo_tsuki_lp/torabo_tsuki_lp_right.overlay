@@ -20,14 +20,16 @@
 &pointing_listener {
     compatible = "zmk,input-listener";
     input-processors =
-      <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-      //トラボ使用後10秒間レイヤー5を有効にする。
-      <&zip_temp_layer 5 10000>;
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+        //トラボ使用後10秒間レイヤー5を有効にする。
+        <&zip_temp_layer 5 10000>;
 
     // 【レイヤー別設定】レイヤー6が有効な時だけ、カーソル移動をスクロールに変換する
     scroller {
         layers = <6>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper>;
+            &zip_scroll_scaler 2 3
     };
 };
 
