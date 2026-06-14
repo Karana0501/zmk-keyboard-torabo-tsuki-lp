@@ -1,7 +1,6 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &zip_temp_layer {
     //キー入力から200ms間はAMLを発動しない。
@@ -30,7 +29,7 @@
         layers = <6>;
         input-processors = <
             &zip_xy_to_scroll_mapper
-            &zip_scroll_y_scaler 1 3
+            &zip_scroll_scaler 1 3
             &zip_scroll_x_scaler 0 1
         >;
     };
