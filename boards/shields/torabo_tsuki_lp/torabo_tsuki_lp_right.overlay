@@ -2,6 +2,16 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+&zip_temp_layer {
+    excluded-positions = <
+        19 // J
+        20 // K
+        21 // L
+        33 // M
+        34 // <
+    >;
+};
+
 &pointing_listener {
     compatible = "zmk,input-listener";
     input-processors =
