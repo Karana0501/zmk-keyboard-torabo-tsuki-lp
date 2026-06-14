@@ -4,6 +4,8 @@
 
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    compatible = "zmk,input-listener";
+    input-processors = <&zip_temp_layer 5 10000>;
 };
 
 &size_s_transform {
@@ -16,13 +18,4 @@
 
 &size_l_transform {
     col-offset = <7>;
-};
-
-/ {
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&pointing_listener>;
-
-        input-processors = <&zip_temp_layer 5 10000>;
-    };
 };
