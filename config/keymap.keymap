@@ -1,13 +1,12 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 //クリックした後250ミリ秒後にAMLを解除する。
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 250>;
-};
+
+&mkp_input_listener { input-processors = <&zip_temp_layer 5 250>; };
 
 / {
     combos {
@@ -89,11 +88,11 @@
 
         main {
             bindings = <
-&none      &none     &none         &none  &none        &none                                      &none            &none  &none      &none    &none          &none
-&kp ESC    &kp Q     &kp W         &kp E  &kp R        &kp T                                      &kp Y            &kp U  &kp I      &kp O    &kp BACKSPACE  &kp DEL
-&kp TAB    &kp A     &kp S         &kp D  &kp F        &kp G        &none            &none        &kp H            &kp J  &kp K      &kp L    &kp P          &kp MINUS
-&kp LSHFT  &kp Z     &kp X         &kp C  &kp V        &kp B        &lt 4 ASTERISK   &kp AT_SIGN  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
-&kp LCTRL  &kp LGUI  &kp LEFT_ALT  &kp A  &lt 1 LANG2  &lt 2 LANG1  &mt LSHFT SPACE  &kp ENTER    &lt 3 BACKSPACE  &none  &none      &none    &kp SLASH      &kp EQUAL
+&none            &none     &none         &none  &none        &none                                      &none            &none  &none      &none    &none          &none
+&kp ESC          &kp Q     &kp W         &kp E  &kp R        &kp T                                      &kp Y            &kp U  &kp I      &kp O    &kp BACKSPACE  &kp DEL
+&mt TAB LG(V)    &kp A     &kp S         &kp D  &kp F        &kp G        &none            &none        &kp H            &kp J  &kp K      &kp L    &kp P          &kp MINUS
+&mt LSHFT LC(V)  &kp Z     &kp X         &kp C  &kp V        &kp B        &lt 4 ASTERISK   &kp AT_SIGN  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SQT
+&mt LCTRL LC(C)  &kp LGUI  &kp LEFT_ALT  &kp A  &lt 1 LANG2  &lt 2 LANG1  &mt LSHFT SPACE  &kp ENTER    &lt 3 BACKSPACE  &none  &none      &none    &kp SLASH      &kp EQUAL
             >;
         };
 
