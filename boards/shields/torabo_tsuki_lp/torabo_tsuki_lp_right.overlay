@@ -2,7 +2,6 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-//下記以外のキーを押すとAMLを解除する。
 &zip_temp_layer {
     //キー入力から200ms間はAMLを発動しない。
 　　require-prior-idle-ms = <200>;
