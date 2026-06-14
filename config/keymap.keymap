@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <input/processors.dtsi>
 
+//クリックした後250ミリ秒後にAMLを解除する。
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 5 250>;
 };
