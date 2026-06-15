@@ -112,18 +112,6 @@
         bindings = <&mo>, <&kp>;
     };
 
-    //マクロとレイヤー切替用
-    macro_lt: macro_lt {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MACRO_LT";
-        #binding-cells = <2>;
-
-        flavor = "balanced";
-        tapping-term-ms = <200>;
-
-        bindings = <&mo>, <&macro_param_0to1>;
-    };
-
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
