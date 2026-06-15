@@ -113,7 +113,7 @@
     };
 
     //マクロとレイヤー切替用
-    ma_lr: macro_layer {
+    macro_layer: macro_layer {
         compatible = "zmk,behavior-hold-tap";
         label = "MACRO_LAYER";
         #binding-cells = <2>;
