@@ -99,7 +99,7 @@
         };
     };
 
-    //バックスペースとレイヤー変更用
+    //バックスペースとレイヤー切替用
     bs_lt: bs_layer_tap {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
@@ -110,6 +110,18 @@
         quick-tap-ms = <175>;
     
         bindings = <&mo>, <&kp>;
+    };
+
+    //マクロとレイヤー切替用
+    macro_lt: macro_lt {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MACRO_LT";
+        #binding-cells = <2>;
+
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+
+        bindings = <&mo>, <&macro_param_0to1>;
     };
 
     pointing_listener: pointing_listener {
