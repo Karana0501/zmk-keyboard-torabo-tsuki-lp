@@ -115,8 +115,7 @@
     //マクロとレイヤー切替用
     macro_layer: macro_layer {
         compatible = "zmk,behavior-hold-tap";
-        label = "MACRO_LAYER";
-        #binding-cells = <2>;
+        #binding-cells = <0>;
 
         flavor = "balanced";
         tapping-term-ms = <200>;
