@@ -88,6 +88,7 @@
         compatible = "zmk,cdc-acm-bootloader-trigger";
     };
 
+    //スクロールを縦方向にのみにする。
     input_processors {
         zip_scroll_x_scaler: zip_scroll_x_scaler {
             compatible = "zmk,input-processor-scaler";
@@ -96,6 +97,19 @@
             codes = <INPUT_REL_HWHEEL>;
             track-remainders;
         };
+    };
+
+    //バックスペースとレイヤー変更用
+    bs_lt: bs_layer_tap {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+    
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+    
+        quick-tap-ms = <175>;
+    
+        bindings = <&mo>, <&kp>;
     };
 
     pointing_listener: pointing_listener {
