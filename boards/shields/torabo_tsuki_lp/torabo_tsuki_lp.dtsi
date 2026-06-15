@@ -115,7 +115,7 @@
     //マクロとレイヤー切替用
     mc_lyr: macro_layer {
         compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
+        #binding-cells = <1>;
 
         flavor = "balanced";
         tapping-term-ms = <200>;
