@@ -113,7 +113,7 @@
     };
 
     //マクロとレイヤー切替用
-    macro_layer: macro_layer {
+    ma_lr: macro_layer {
         compatible = "zmk,behavior-hold-tap";
         label = "MACRO_LAYER";
         #binding-cells = <2>;
@@ -121,7 +121,7 @@
         flavor = "balanced";
         tapping-term-ms = <200>;
 
-        bindings = <&mo>, <&Macro00>;
+        bindings = <&mo>, <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
     };
 
     pointing_listener: pointing_listener {
