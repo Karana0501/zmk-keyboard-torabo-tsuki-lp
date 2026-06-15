@@ -121,7 +121,7 @@
         flavor = "balanced";
         tapping-term-ms = <200>;
 
-        bindings = <&mo>, <&macro00>;
+        bindings = <&mo>, <&Macro00>;
     };
 
     pointing_listener: pointing_listener {
