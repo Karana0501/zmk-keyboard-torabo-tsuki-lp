@@ -84,14 +84,14 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";
-
         //トラックボールが12ドット以上動いた場合にのみマウスレイヤーを起動する。
         zip_temp_layer: zip_temp_layer {
             compatible = "zmk,behavior-drag-scroll";
             #binding-cells = <0>;
             min-drag-distance = <12>;
         };
+
+        compatible = "zmk,keymap";
 
         main {
             bindings = <
