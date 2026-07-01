@@ -116,12 +116,12 @@
     hm_macro02: hold_macro02_layer6 {
         compatible = "zmk,behavior-hold-tap";
         label = "HOLD_MACRO02_LAYER6";
-        #binding-cells = <0>;
+        #binding-cells = <1>;
         tapping-term-ms = <200>;
         quick-tap-ms = <175>;
         flavor = "balanced";
 
-        bindings = <&mo 6>, <&Macro02>;
+        bindings = <&mo 6>, <&Macro02 0>;
     };
 
     pointing_listener: pointing_listener {
