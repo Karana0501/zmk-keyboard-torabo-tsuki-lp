@@ -5,9 +5,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //クリックした後250ミリ秒後にAMLを解除する。
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 250>;
-};
+
+&mkp_input_listener { input-processors = <&zip_temp_layer 5 250>; };
 
 / {
     combos {
@@ -89,11 +88,11 @@
 
         main {
             bindings = <
-&none            &none     &none               &none            &none        &none                                        &none          &none  &none      &none                 &none            &none
-&kp ESC          &kp Q     &kp W               &kp E            &kp R        &kp T                                        &kp Y          &kp U  &kp I      &kp O                 &kp DELETE       &lt 6 RS(RG(S))
-&kp TAB          &kp A     &kp S               &kp D            &kp F        &kp G        &none            &none          &kp H          &kp J  &kp K      &kp L                 &kp P            &kp MINUS
-&mt LSHFT LC(V)  &kp Z     &kp X               &kp C            &kp V        &kp B        &lt 4 ASTERISK   &lt 4 AT_SIGN  &kp N          &kp M  &kp COMMA  &kp DOT               &lt 6 SEMICOLON  &kp SQT
-&mt LCTRL LC(C)  &kp LGUI  &mt LEFT_ALT LG(V)  &lt 5 LS(LG(S))  &lt 1 LANG2  &lt 2 LANG1  &mt LSHFT SPACE  &kp ENTER      &bs_lt 3 BSPC  &none  &none      &kp NON_US_BACKSLASH  &kp SLASH        &kp EQUAL
+&none            &none     &none               &none          &none        &none                                        &none          &none  &none      &none                 &none            &none
+&kp ESC          &kp Q     &kp W               &kp E          &kp R        &kp T                                        &kp Y          &kp U  &kp I      &kp O                 &Macro01         &lt 6 RS(RG(S))
+&kp TAB          &kp A     &kp S               &kp D          &kp F        &kp G        &none            &none          &kp H          &kp J  &kp K      &kp L                 &kp P            &kp MINUS
+&mt LSHFT LC(V)  &kp Z     &kp X               &kp C          &kp V        &kp B        &lt 4 ASTERISK   &lt 4 AT_SIGN  &kp N          &kp M  &kp COMMA  &kp DOT               &lt 6 SEMICOLON  &kp SQT
+&mt LCTRL LC(C)  &kp LGUI  &mt LEFT_ALT LG(V)  &kp LS(LG(S))  &lt 1 LANG2  &lt 2 LANG1  &mt LSHFT SPACE  &kp ENTER      &bs_lt 3 BSPC  &none  &none      &kp NON_US_BACKSLASH  &kp SLASH        &kp EQUAL
             >;
         };
 
