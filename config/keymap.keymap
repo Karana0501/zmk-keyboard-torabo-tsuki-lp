@@ -89,7 +89,7 @@
         main {
             bindings = <
 &none      &none     &none         &none          &none        &none                                        &none          &none  &none      &none                 &none            &none
-&kp ESC    &kp Q     &kp W         &kp E          &kp R        &kp T                                        &kp Y          &kp U  &kp I      &kp O                 &Macro00         &hm_macro02 6 0
+&kp ESC    &kp Q     &kp W         &kp E          &kp R        &kp T                                        &kp Y          &kp U  &kp I      &kp O                 &Macro00         &hm_macro01 6 0
 &kp TAB    &kp A     &kp S         &kp D          &kp F        &kp G        &none            &none          &kp H          &kp J  &kp K      &kp L                 &kp P            &kp MINUS
 &kp LSHFT  &kp Z     &kp X         &kp C          &kp V        &kp B        &lt 4 ASTERISK   &lt 4 AT_SIGN  &kp N          &kp M  &kp COMMA  &kp DOT               &lt 6 SEMICOLON  &kp SQT
 &kp LCTRL  &kp LGUI  &kp LEFT_ALT  &kp LS(LG(S))  &lt 1 LANG2  &lt 2 LANG1  &mt LSHFT SPACE  &kp ENTER      &bs_lt 3 BSPC  &none  &none      &kp NON_US_BACKSLASH  &kp SLASH        &kp EQUAL
