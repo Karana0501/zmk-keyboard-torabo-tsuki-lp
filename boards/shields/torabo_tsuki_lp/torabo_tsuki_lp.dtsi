@@ -112,6 +112,20 @@
         bindings = <&mo>, <&kp>;
     };
 
+    //レイヤー6とマクロを切りかえる。
+    behaviors {
+        hm_macro02: hold_macro02_layer6 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_MACRO02_LAYER6";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+
+            bindings = <&mo 6>, <&Macro02>;
+        };
+    };
+
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
