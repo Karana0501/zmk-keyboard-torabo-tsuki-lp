@@ -28,10 +28,8 @@
         layers = <7>;
 
         input-processors = <
-            &zip_xy_scaler 2 1
+            &zip_xy_scaler 1 2
         >;
-
-        process-next;
     };
 
     //カーソル移動をスクロールに変換する(レイヤー6)
