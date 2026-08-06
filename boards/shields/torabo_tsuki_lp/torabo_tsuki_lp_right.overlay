@@ -21,7 +21,7 @@
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         //トラボ使用後10秒間レイヤー5を有効にする。
-        <&zip_temp_layer 5 3000>;
+        <&zip_temp_layer 5 10000>;
 
     //カーソル移動速度を50%減速する(レイヤー7)
     precision_cursor {
