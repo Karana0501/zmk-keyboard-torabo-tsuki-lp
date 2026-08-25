@@ -135,6 +135,36 @@
         compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 4>; 
     };
+
+    behaviors {
+        // 1回タップ = *
+        // 2回タップ = Win + Shift + S
+        screenshot_td: screenshot_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+
+            bindings = <
+                &kp ASTERISK
+                &kp LG(LS(S))
+            >;
+        };
+
+        // タップ = 上記Tap-Dance
+        // 長押し = Layer 4
+        my_key: my_key {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+
+            bindings = <
+                &mo
+                &screenshot_td
+            >;
+        };
+    };
 };
 
 &pinctrl {
