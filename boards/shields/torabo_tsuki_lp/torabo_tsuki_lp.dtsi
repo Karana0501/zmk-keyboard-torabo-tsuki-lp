@@ -136,14 +136,16 @@
         io-channels = <&adc 4>; 
     };
 
-    // 1回タップ = *
-    // 2回タップ = Win + Shift + S
-    screenshot_td: screenshot_td {
-        compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-
-        bindings = <&kp ASTERISK>, <&kp S>;
+    behaviors {
+        // 1回タップ = *
+        // 2回タップ = Win + Shift + S
+        screenshot_td: screenshot_td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+    
+            bindings = <&kp ASTERISK>, <&kp S>;
+        };
     };
 };
 
