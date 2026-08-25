@@ -122,6 +122,18 @@
         bindings = <&mo>, <&Macro01>;
     };
 
+    behaviors {
+        // 1回タップ = *
+        // 2回タップ = Win + Shift + S
+        screenshot_td: screenshot_td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+    
+            bindings = <&kp ASTERISK>, <&Macro04>;
+        };
+    };
+
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
