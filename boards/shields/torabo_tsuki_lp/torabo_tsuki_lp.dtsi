@@ -140,7 +140,7 @@
     // 2回タップ = Win + Shift + S
     screenshot_td: screenshot_td {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <2>;
+        #binding-cells = <0>;
         tapping-term-ms = <200>;
 
         bindings = <&kp ASTERISK>, <&kp LG(LS(S))>;
