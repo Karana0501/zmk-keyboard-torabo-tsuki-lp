@@ -139,30 +139,24 @@
     behaviors {
         // 1回タップ = *
         // 2回タップ = Win + Shift + S
-        screenshot_td: screenshot_tap_dance {
+        screenshot_td: screenshot_td {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
 
-            bindings = <
-                &kp ASTERISK
-                &kp LG(LS(S))
-            >;
+            bindings = <&kp ASTERISK>, <&kp LG(LS(S))>;
         };
 
         // タップ = 上記Tap-Dance
         // 長押し = Layer 4
-        my_key: my_key {
+        star_screenshot_layer: star_screenshot_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
 
             flavor = "tap-preferred";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
 
-            bindings = <
-                &mo
-                &screenshot_td
-            >;
+            bindings = <&mo 4>, <&screenshot_td>;
         };
     };
 };
