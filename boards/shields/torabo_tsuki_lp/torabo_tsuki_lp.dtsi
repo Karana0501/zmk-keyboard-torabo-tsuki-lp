@@ -2,8 +2,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "torabo_tsuki_lp_layouts.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     chosen {
@@ -136,6 +134,18 @@
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 4>; 
+    };
+
+    behaviors {
+        // 1回タップ = *
+        // 2回タップ = Win + Shift + S
+        screenshot_td: screenshot_td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+
+            bindings = <&kp ASTERISK>, <&kp LG(LS(S))>;
+        };
     };
 };
 
