@@ -81,6 +81,13 @@
             bindings = <&kp LS(K) &kp O &kp B &kp E &kp L &kp C &kp O &kp DOT &kp C &kp O &kp M>;
             label = "MACRO03";
         };
+
+        Macro04: Macro04 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(S))>;
+            label = "MACRO04";
+        };
     };
 
     keymap {
