@@ -112,21 +112,6 @@
         bindings = <&mo>, <&kp>;
     };
 
-    behaviors {
-        // 1回タップ = *
-        // 2回タップ = Win + Shift + S
-        screenshot_td: screenshot_tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-
-            bindings = <
-                &kp ASTERISK
-                &kp LG(LS(S))
-            >;
-        };
-    };
-
     //レイヤー6とマクロを切りかえる。
     hm_macro01: hold_macro02_layer6 {
         compatible = "zmk,behavior-hold-tap";
