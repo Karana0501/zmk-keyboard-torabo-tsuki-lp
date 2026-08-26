@@ -81,20 +81,6 @@
             bindings = <&kp LS(K) &kp O &kp B &kp E &kp L &kp C &kp O &kp DOT &kp C &kp O &kp M>;
             label = "MACRO03";
         };
-
-        Macro04: Macro04 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp C>;
-            label = "MACRO04";
-        };
-
-        Macro05: Macro05 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp V>;
-            label = "MACRO05";
-        };
     };
 
     keymap {
@@ -126,7 +112,7 @@
 &kp LA(LC(END))  &kp PG_DN  &trans    &kp UP_ARROW    &trans     &kp PG_UP                     &kp LS(LG(S))  &kp LG(E)  &kp LC(S)  &kp RS(RCTRL)  &trans  &trans
 &trans           &kp HOME   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END    &trans  &trans     &kp LC(A)      &kp LC(Z)  &kp LC(Y)  &kp RSHIFT     &trans  &trans
 &trans           &trans     &trans    &trans          &trans     &trans     &trans  &kp LG(V)  &kp LC(X)      &kp LC(F)  &kp LC(H)  &kp RCTRL      &trans  &trans
-&trans           &trans     &trans    &trans          &trans     &trans     &trans  &Macro04   &Macro05       &trans     &trans     &trans         &trans  &trans
+&trans           &trans     &trans    &trans          &trans     &trans     &trans  &kp LC(C)  &kp LC(V)      &trans     &trans     &trans         &trans  &trans
             >;
         };
 
