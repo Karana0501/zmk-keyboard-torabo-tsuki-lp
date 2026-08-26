@@ -125,11 +125,11 @@
 
         kigou {
             bindings = <
-&trans  &trans  &trans           &trans                &trans                 &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp PERCENT      &kp CARET             &kp AMPERSAND          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans           &trans                &trans                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans        &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp AMPERSAND    &kp ASTERISK  &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp DOLLAR       &kp PERCENT   &kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans        &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
